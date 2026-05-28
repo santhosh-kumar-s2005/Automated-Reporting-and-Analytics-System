@@ -14,6 +14,7 @@ import time
 # 1. DATABASE CONNECTION
 # =============================
 def get_data_from_sql():
+    
     print("🔌 Connecting to SQL Server...")
 
     conn = pyodbc.connect(
@@ -32,6 +33,7 @@ def get_data_from_sql():
     conn.close()
 
     print("✅ Data fetched from SQL Server")
+    
     return df
 
 
